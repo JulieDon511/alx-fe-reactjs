@@ -1,5 +1,5 @@
 import './App.css'
-import UserProfile from './Components/UserProfile'
+import UserProfile from './components/UserProfile'
 function App() {
 
 
