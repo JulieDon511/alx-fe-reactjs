@@ -1,8 +1,12 @@
-function UserDetails({ userData }) {
+import{ useContext } from 'react';
+import { Context } from '../UserContext';
+function UserDetails() {
+    const userData = useContext(Context);
+    const { name, email } = userData;   
   return (
     <div>
-      <p>Name: {userData.name}</p>
-      <p>Email: {userData.email}</p>
+      <p>Name: {name}</p>
+      <p>Email: {email}</p>
     </div>
   );
 }
