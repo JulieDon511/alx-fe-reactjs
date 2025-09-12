@@ -6,7 +6,7 @@ import WelcomeMessage from './components/WelcomeMessage'
 import UserProfile from './components/UserProfile'
 
 function App() {
-
+  const userData = { name: "Jane Doe", email: "jane.doe@example.com" };
 
   return (
     <div className="app">
@@ -17,6 +17,7 @@ function App() {
                 name="Alice" 
                 age="25" 
                 bio="Loves hiking and photography" />
+                <ProfilePage userData={userData} />;
                 <Footer />
     </div>
       
